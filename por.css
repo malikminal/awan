@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar{
+    text-decoration: none;
+    z-index: 999;
+    position: fixed;
+    padding: 15px 0;
+    width: 100%;
+    background: black;
+}
+.navbar .max-width{
+     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: seagreen
+}
+.navbar .menu li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .menu li a:hover{
+    color: seagreen
+}
+.navbar .menu li{
+    text-decoration: none;
+    list-style: none;
+ display: inline-table;   
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+/* home section start*/
+.home{
+    display: flex;
+    background-image: url("file:///C:/Users/Minaal/Downloads/653614b7-ccef-4129-a907-5bb11647d49b.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+font-size: 27px;
+}
+.home .home-content .text-2{
+    color: seagreen;
+font-size: 75px;
+font-weight: 600;
+margin-left: -3px;
+}
+.home .home-content .text-3{
+font-size: 40px;
+margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: black;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: seagreen;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid seagreen;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: seagreen;
+    background: none;
+}
+
+/*all similar content styling code*/
+/*About Section Styling*/
+section{
+    padding: 30px 0;
+}
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.h2 .title{
+text-align: center;
+position:relative;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-family: "Ubuntu" , sans-serif;
+}
+.about .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.about .title::after{
+    content:  "Who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: seagreen;
+    padding: 5px; 
+    background:white;
+    transform: translateX(-50%);
+}
+.about .about-content, .services .services-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 35%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: auto;
+}
+.about .about-content .right .text span{
+    color: seagreen;
+}
+.about .about-content .right p{
+    text-align:left;
+}
+
+/*services section styling*/
+.services{
+    padding: 100px 0;
+    background-color: seagreen;
+  }
+  .services{
+    font-family: 'poppins',sans-serif;
+  }
+  .services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif; 
+  }
+  .services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+  }
+  .services .title::after{
+   content: "What I Provide";
+   position: absolute;
+   bottom: -12px;
+   left: 50%;
+   font-size: 20px;
+   color: white;
+   padding: 5px; 
+   background:seagreen;
+   transform: translateX(-50%);
+    }
+.services.serv-content .card{
+    width: calc(33% - 20px);
+   }
+   label {
+   padding-right: 90px;
+   font-size: 20px;
+ } 
+ .services .serv-content .container .card{
+   text-align: center;
+   background: lightslategray;
+   text-align: center;
+   border-radius: 6px;
+   padding: 20px 25px;
+   cursor: pointer;
+ }
+ .services .serv-content .container .card i{
+   font-size: 50;
+   color: purple;
+ }
+ .services .card .btn{
+  display: inline-block;
+  background: seagreen;
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 12px 36px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+ .services .card:hover .btn{
+   color:white;
+   background: none;
+ }
+
+ .services .serv-content.container .card:hover .box{
+   transform: scale(1.05);
+ }
+ .services .serv-content.container .card .text{
+   font-size: 15px;
+   font-weight: 500;
+   margin: 10px 0 7px 0;
+ }
+ .services .serv-content.container .card .box{
+   display: block;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.3 ease;
+   
+ }
+ .services .container .card img{
+  height: 300px;
+  width: 300px;
+ object-fit: cover;
+ transition: all 0.3 ease;
+ 
+ }
+ h5{
+   font-size: 80px;
+   font-weight: bold;
+ }
+  .services .serv-content.container .card:hover img{
+    border-color: #fff;
+  }
+  .services .serv-content  a{
+    display:inline-block; 
+   background: purple;
+   color: #fff;
+   font-size: 20px;
+   padding: 10px 30px;
+   margin-top: 20px;
+   border-radius: 6px;
+   border: 2px solid purple;
+   transition: all 0.3s ease;
+ }
+ .services .serv-content  a:hover{
+   color: purple;
+   background: none;
+ }.services .serv-content {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+ }
+ .card-title{
+   padding: 50px 0;
+   position: relative;
+   text-align: center;
+   font-size: 30px;
+   font-display: bold;
+   font-weight: 500;
+   margin-bottom: 40px;
+   padding-bottom: 20px;
+   font-family: 'ubuntu', sans-serif;
+   font-style: normal; 
+ }
+ h1{
+   position: relative;
+   text-align: center;
+   font-size: 40px;
+   
+   font-weight: 500;
+   margin-bottom: 60px;
+   padding-bottom: 20px;
+   font-family: 'ubuntu', sans-serif; 
+ }
+/*skills section styling*/
+
+.skills{
+    padding: 100px 0;
+  }
+  .skills{
+    font-family: 'poppins',sans-serif;
+  }
+  .skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif; 
+  }
+  .skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+  }
+  .skills .title::after{
+   content: "What I Know";
+   position: absolute;
+   bottom: -12px;
+   left: 50%;
+   font-size: 20px;
+   color: seagreen;
+   padding: 5px; 
+   background:white;
+   transform: translateX(-50%);
+    }
+  .skills .skills-content {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+   }
+  label {
+     padding-right: 90px;
+     font-size: 20px;
+  }
+  .skills .skills-content .column{
+     width: calc(50% - 30px);
+  }
+  .skills .skills-content .left .text{
+     font-size: 20px;
+     font-weight: 600;
+     margin-bottom: 10px;
+  }
+  .skills .skills-content .left p{
+    text-align: justify;
+  }
+  .skills .skills-content .left a{
+    display:inline-block;
+    background:seagreen;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid seagreen;
+    transition: all 0.3s ease;
+  }
+  .skills .skills-content .left a:hover{
+    color: seagreen;
+    background: none;
+  }
+  .skills .skills-content .right .bars{
+    margin-bottom: 15px;
+  }
+  .skills .skills-content .right .indigo{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+  }    
+  .skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .skills .skills-content .right .line{
+  height: 5px;
+  width: 100%;
+  background:white;
+  position: relative;
+  }
+  .skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background:seagreen;
+  }
+  .skills .skills-content .right .html::after{
+   width: 90%;
+  }
+  .skills .skills-content .right .css::after{
+  width: 90%;
+  }
+  .skills .skills-content .right .bootstrap::after{
+  width: 90%;
+  }
+/*contact section styling*/
+.contact-title{
+  text-align: center;
+  background: url("file:///C:/Users/Minaal/Downloads/The-Dead-Sea.jpg") no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-title h2{
+  text-align: center;
+  color: white;
+}
+.contact .h2::after{
+  content:  "Who I am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: seagreen;
+  padding: 5px; 
+  background:white;
+  transform: translateX(-50%);
+}
+.contact-title h3{
+  text-align: center;
+  color:white;
+}
+.border{
+  width:100px;
+  height: 10px;
+  background: black;
+  margin: 40px auto;
+}
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding:0 10px;
+  overflow: hidden;
+}
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background:white;
+  padding: 20px 40px;
+  outline: none;
+  color: black;
+  transition: 0.5s;
+}
+.contact-form-text:hover{
+  box-shadow: 0 0 10px 4px lightblue;
+}
+.textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  display: block;
+  border: 0;
+  background: seagreen;
+  color:white;
+  font-size: 18px;
+  padding: 12px 50px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid seagreen;
+  transition: all 0.3s ease;
+}
+.contact-form-btn:hover{
+color:seagreen;
+background: none;
+}
+/* footer section styling */
+.footer{
+  background:black;
+  padding: 23px 20px;
+  color:#fff;
+}
+footer span a{
+  color: seagreen;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
+footer  .footer-content .column-right .icons{
+  margin: 10px 0;
+  color: seagreen;
+  }
+  
